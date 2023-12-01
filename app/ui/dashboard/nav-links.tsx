@@ -25,7 +25,8 @@ export default function NavLinks() {
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
-        const pathname = usePathname;
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        const pathname = usePathname();
         return (
           <Link
             key={link.name}
